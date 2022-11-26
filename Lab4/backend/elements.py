@@ -1,5 +1,6 @@
 import schemdraw
 import schemdraw.elements as elm
+import numpy as np
 elm.style(elm.STYLE_IEC)
 
 class Resistor:

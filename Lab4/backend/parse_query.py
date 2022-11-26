@@ -1,4 +1,6 @@
-from definition_elements import Resistor
+import sys
+sys.path.append("..")
+from backend.elements import Resistor
 
 class DATA:
   def __init__(self,data):

@@ -1,3 +1,3 @@
-from graph_interface import main as Simple_Parser
+from frontend import main_frontend as Simple_Parser
 
 Simple_Parser()

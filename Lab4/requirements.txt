@@ -1,3 +1,4 @@
-nltk
+numpy
+schemdraw
+matplotlib
 PyQt5
-pandas

@@ -1,3 +1,3 @@
-from frontend import main_frontend as Simple_Parser
+from frontend.main_frontend import Simple_Parser
 
 Simple_Parser()

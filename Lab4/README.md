@@ -14,8 +14,13 @@ Phân tích cú pháp ngôn ngữ Python
 <pre> python main.py </pre>
 
 ### Thông tin về cách mô tả mạch điện
-Để khai báo 1 điện trở R1: R1
-Ký hiệu:
-    - '+': mắc nối tiếp
-    - '*': mắc song song
-    - '()': 
+- Ký hiệu:
+    + '+' : mắc nối tiếp
+    + '*' : mắc song song
+    + '()': đống gói mạch
+
+- Để khai báo giá trị của R1 và R2:
+    + R1=5,R2=6
+    
+- Để khai báo mạch điện của R1 nối tiếp R2 và mắc song song với R3:
+    + (R1+R1)*R3

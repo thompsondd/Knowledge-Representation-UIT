@@ -143,6 +143,6 @@ class Manage_Circuit:
         start -=1
     #print(f"t: {t}")
 
-#circuit = "(R1*R5)*(R2+(R3*R4))"
-#value_circuit="R1=3,R2=4,R3=5,R4=6,R5=5"
+#circuit = "R1+R2+(R3*(R4+R5+R6))"
+#value_circuit="R1=3,R2=4,R3=5,R4=6,R5=5,R6=7"
 #print(Manage_Circuit(circuit,value_circuit).get_R())

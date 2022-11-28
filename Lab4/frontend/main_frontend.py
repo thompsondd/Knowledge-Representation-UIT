@@ -101,12 +101,14 @@ class Ui_MainWindow(object):
         self.textBrowser.clear()
         #print(f"get circuit from input: {circuit}")
         #print(f"get value_eles from input: {value_eles}\n")
-
-        backend = Manage_Circuit(circuit,value_eles)
-        path = backend.get_draw()[-1]
-
-        text = f"<p style='font-size: 15px'>Giá trị của điện trở tương đương: {backend.get_R()}</p></hr><p><img src={path} alt='Ảnh mạch điện'></p>"
-        self.textBrowser.append(text)
+        if circuit!="" and value_eles!="":
+            backend = Manage_Circuit(circuit,value_eles)
+            path = backend.get_draw()[-1]
+            text = f"<p style='font-size: 15px'>Mô tả mạch điện: {circuit}</p></hr>\
+                     <p style='font-size: 15px'>Giá trị các thành phần: {value_eles}</p></hr>\
+                     <p style='font-size: 15px'>Giá trị của điện trở tương đương: {backend.get_R()}</p></hr>\
+                     <p align='center'><img src={path} alt='Ảnh mạch điện'></p>"
+            self.textBrowser.append(text)
 
 def Simple_Parser():
     import sys

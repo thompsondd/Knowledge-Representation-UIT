@@ -34,7 +34,7 @@ class ParseRela:
       elif c=="R":
         id = ""
         check = self.Dataset.next_char()
-        while check !=None and check.isalnum():
+        while check !=None and check not in ["(",")","+","*","R"]:
           id += self.Dataset.getNextChar()
           check =  self.Dataset.next_char()
         yield((c+id,"V"))

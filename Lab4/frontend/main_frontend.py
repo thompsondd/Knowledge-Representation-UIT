@@ -111,7 +111,6 @@ class Ui_MainWindow(object):
             self.textBrowser.append(text)
 
 def Simple_Parser():
-    import sys
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
